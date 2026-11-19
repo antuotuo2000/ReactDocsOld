@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>萨尔·曼库索 Salvatore "Sal" Mancuso 深度领导力与战略研究报告：奥驰亚（NYSE: MO）第十任掌舵人、36年内部嫡系老将、2.0x财务铁律与无烟转型操盘手</title>
+  <!-- Tailwind CSS (Pinned Version + Fallback) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    if (typeof tailwind === 'undefined') {
+      document.write('<script src="https://cdn.tailwindcss.com"><\/script>');
+    }
+  </script>
+  <!-- Chart.js (Pinned Version + Multi-CDN Fallback) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    if (typeof Chart === 'undefined') {
+      document.write('<script src="https://unpkg.com/chart.js@4.4.1/dist/chart.umd.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    if (typeof Chart === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"><\/script>');
+    }
+  </script>
+  <!-- Google Fonts: Inter + Noto Sans SC + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    if (typeof tailwind !== 'undefined') {
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans SC', 'system-ui', '-apple-system', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              navy: {
+                950: '#070B14',
+                900: '#0F172A',
+                800: '#1E293B',
+                700: '#334155',
+              },
+              mogold: {
+                300: '#FCD34D',
+                400: '#FBBF24',
+                500: '#F59E0B',
+                600: '#D97706',
+                700: '#B45309',
+              },
+              emerald: {
+                400: '#34D399',
+                500: '#10B981',
+                600: '#059669',
+              },
+              teal: {
+                400: '#22D3EE',
+                500: '#06B6D4',
+                600: '#0891B2',
+              }
+            }
+          }
+        }
+      };
+    }
+  </script>
+
+  <style>
+    /* 自定义滚动条与机构研报细节排版 */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border-radius: 3px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #475569;
+    }
+
+    /* 打印友好优化 */
+    @media print {
+      #sidebar, #mobile-header, #theme-toggle-btn, #export-toast, .no-print {
+        display: none !important;
+      }
+      main {
+        margin-left: 0 !important;
+        padding: 0 !important;
+      }
+      section {
+        break-inside: avoid;
+      }
+    }
+
+    /* 卡片悬浮微光与上移过渡 */
+    .report-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .report-card:hover {
+      transform: translateY(-2px);
+    }
+
+    /* 侧边导航激活态：琥珀金渐变标识 */
+    .nav-link.active {
+      background: linear-gradient(90deg, rgba(245, 158, 11, 0.24) 0%, rgba(16, 185, 129, 0.06) 100%);
+      border-left: 3px solid #F59E0B;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* 引用信源外链微标签样式 */
+    .cite-link {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease;
+    }
+    .cite-link:hover {
+      color: #F59E0B;
+      text-decoration-style: solid;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-[#1E293B] dark:bg-navy-950 dark:text-slate-100 antialiased selection:bg-mogold-500 selection:text-navy-950 transition-colors duration-200">
+
+  <!-- 顶部全局阅读进度条 -->
+  <div class="fixed top-0 left-0 right-0 h-1 z-50 bg-slate-200/70 dark:bg-navy-800">
+    <div id="reading-progress" class="h-full bg-gradient-to-r from-mogold-600 via-mogold-400 to-emerald-500 w-0 transition-all duration-150"></div>
+  </div>
+
+  <!-- 页面内通知 Toast（用于 HTML 导出与交互反馈，无阻塞弹窗） -->
+  <div id="export-toast" class="fixed bottom-5 right-5 z-50 hidden items-center space-x-2.5 px-4 py-3 rounded-xl bg-navy-900 text-white border border-mogold-500/50 shadow-2xl text-xs font-medium">
+    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+    <span id="export-toast-msg">已导出独立 HTML 报告文件：Altria_CEO_Sal_Mancuso_Analysis.html</span>
+  </div>
+
+  <!-- 移动端顶部导航栏 -->
+  <header id="mobile-header" class="lg:hidden sticky top-0 z-40 bg-navy-900 text-white border-b border-slate-800 px-4 py-3 flex items-center justify-between shadow-md">
+    <div class="flex items-center space-x-2.5">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-mogold-400 to-mogold-600 flex items-center justify-center font-extrabold text-navy-950 text-xs shadow">
+        SM
+      </div>
+      <div>
+        <div class="text-[11px] text-mogold-400 font-semibold tracking-wider uppercase">Altria CEO · NYSE: MO</div>
+        <div class="text-sm font-bold leading-tight">萨尔·曼库索深度研究报告</div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-1.5">
+      <button onclick="exportStandaloneHtml()" class="px-2.5 py-1.5 rounded-lg bg-mogold-500 hover:bg-mogold-600 text-navy-950 text-xs font-bold transition" aria-label="导出HTML文件">
+        导出HTML
+      </button>
+      <button onclick="toggleTheme()" class="p-2 rounded-lg bg-navy-800 hover:bg-navy-700 text-slate-300" aria-label="切换阅读主题">
+        <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+      <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="p-2 rounded-lg bg-navy-800 hover:bg-navy-700 text-white" aria-label="打开目录">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 移动端折叠抽屉菜单 -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 hidden lg:hidden">
+    <div class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm" onclick="toggleMobileMenu()"></div>
+    <nav class="relative w-72 max-w-[80vw] h-full bg-navy-900 text-slate-300 flex flex-col justify-between p-5 overflow-y-auto shadow-2xl">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+          <span class="font-bold text-white text-base">奥驰亚 CEO 专题导航</span>
+          <button onclick="toggleMobileMenu()" class="p-1.5 rounded-lg text-slate-400 hover:text-white" aria-label="关闭目录">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <ul class="mt-4 space-y-1.5 text-sm">
+          <li><a href="#sec-exec" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">00. 执行摘要与核心指标</a></li>
+          <li><a href="#sec-biz" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">01. 履历图谱与战略四大支柱</a></li>
+          <li><a href="#sec-moat" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">02. 领导力哲学与四重治理壁垒</a></li>
+          <li><a href="#sec-comp" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">03. 消费与烟草巨头 CEO 横向对比</a></li>
+          <li><a href="#sec-fin" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">04. 资本配置成绩与股东回报推演</a></li>
+          <li><a href="#sec-inv" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">05. 三幕晋升演进与治理遗产复盘</a></li>
+          <li><a href="#sec-kpi" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg hover:bg-navy-800 hover:text-white">06. 曼库索任期评估核查清单</a></li>
+        </ul>
+      </div>
+      <div class="pt-4 border-t border-slate-800 space-y-2 text-xs text-slate-400">
+        <button onclick="exportStandaloneHtml()" class="w-full py-2 px-3 rounded-lg bg-mogold-500 text-navy-950 font-bold text-center">
+          一键导出独立 HTML 文件
+        </button>
+        <p>消费巨头治理与高管研究组</p>
+        <p>财报与治理基准：Altria SEC 8-K / Q3 2026</p>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 桌面端左侧固定侧边导航栏 (宽 280px) -->
+  <aside id="sidebar" class="hidden lg:flex fixed top-0 left-0 bottom-0 w-[280px] bg-[#0F172A] text-slate-300 flex-col justify-between border-r border-slate-800 z-30 select-none">
+    <div>
+      <!-- 机构品牌头 -->
+      <div class="p-5 border-b border-slate-800/80">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-mogold-400 via-mogold-500 to-mogold-600 flex items-center justify-center text-navy-950 font-extrabold text-base shadow-lg shadow-mogold-500/25">
+            SM
+          </div>
+          <div>
+            <span class="inline-block text-[10px] font-bold tracking-widest uppercase text-mogold-400 bg-mogold-500/15 px-2 py-0.5 rounded">CEO MONOGRAPH</span>
+            <h2 class="text-white font-bold text-base mt-0.5 tracking-tight">萨尔·曼库索研报</h2>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-2.5 leading-relaxed">
+          奥驰亚集团（NYSE: MO）第十任掌舵人 · 36年老将 × 财务铁律 × 无烟转型操盘手
+        </p>
+      </div>
+
+      <!-- 核心人物历史财务快照徽章 -->
+      <div class="px-5 py-3 bg-navy-950/70 border-b border-slate-800/80 space-y-1.5 text-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-slate-400">就任 CEO 时间与资历</span>
+          <span class="font-mono font-bold text-white">2026.05.14 · 36年司龄</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-slate-400">2026E 调整后 EPS 指引</span>
+          <span class="font-mono font-bold text-emerald-400">$5.66–$5.74 (+4.5~6%)</span>
+        </div>
+        <div class="flex items-center justify-between pt-1 border-t border-slate-800/70">
+          <span class="text-slate-400">杠杆红线与股息率</span>
+          <span class="font-mono font-bold text-mogold-400">~2.0x · 年息 $4.44/股</span>
+        </div>
+      </div>
+
+      <!-- 七大核心章节目录导航 -->
+      <div class="px-3 py-3 overflow-y-auto max-h-[calc(100vh-345px)]">
+        <div class="px-3 mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500">核心研究章节</div>
+        <nav id="desktop-nav" class="space-y-1 text-[13px]">
+          <a href="#sec-exec" data-target="sec-exec" class="nav-link active flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-mogold-400 mr-2">00</span>执行摘要与核心指标</span>
+          </a>
+          <a href="#sec-biz" data-target="sec-biz" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">01</span>履历图谱与战略四大支柱</span>
+          </a>
+          <a href="#sec-moat" data-target="sec-moat" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">02</span>领导力哲学与四重治理壁垒</span>
+          </a>
+          <a href="#sec-comp" data-target="sec-comp" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">03</span>消费与烟草巨头 CEO 横向对比</span>
+          </a>
+          <a href="#sec-fin" data-target="sec-fin" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">04</span>资本配置成绩与股东回报推演</span>
+          </a>
+          <a href="#sec-inv" data-target="sec-inv" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">05</span>三幕晋升演进与治理遗产复盘</span>
+          </a>
+          <a href="#sec-kpi" data-target="sec-kpi" class="nav-link flex items-center justify-between px-3 py-2 rounded-r-lg text-slate-300 hover:bg-navy-800/70 hover:text-white transition-all">
+            <span><span class="text-xs font-mono text-slate-500 mr-2">06</span>曼库索任期评估核查清单</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 侧边栏底部工具栏：支持亮暗切换、一键导出 HTML 文件、打印 PDF -->
+    <div class="p-4 border-t border-slate-800/80 bg-navy-950/50 space-y-2">
+      <div class="flex items-center justify-between">
+        <span class="text-xs text-slate-400">阅读模式切换</span>
+        <button id="theme-toggle-btn" onclick="toggleTheme()" class="flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-medium text-slate-200 border border-slate-700 transition cursor-pointer">
+          <svg class="w-3.5 h-3.5 text-mogold-400 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg class="w-3.5 h-3.5 text-mogold-500 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <span class="dark:hidden">深色护眼模式</span>
+          <span class="hidden dark:inline">机构亮色模式</span>
+        </button>
+      </div>
+      <button onclick="exportStandaloneHtml()" class="w-full flex items-center justify-center space-x-2 py-2 px-3 rounded-lg bg-gradient-to-r from-mogold-500 to-mogold-600 hover:from-mogold-600 hover:to-mogold-700 text-navy-950 text-xs font-extrabold transition shadow-sm cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        <span>导出独立 HTML 文件 (.html)</span>
+      </button>
+      <button onclick="window.print()" class="w-full flex items-center justify-center space-x-2 py-1.5 px-3 rounded-lg bg-navy-800 hover:bg-navy-700 text-slate-200 border border-slate-700 text-xs font-semibold transition cursor-pointer">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+        <span>打印 / 导出 PDF 研报</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- 主内容区 -->
+  <main class="lg:ml-[280px] min-h-screen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-8 lg:py-12 space-y-12">
+
+      <!-- =========================================================
+           00. Hero 研报封面区与执行摘要
+      ========================================================= -->
+      <section id="sec-exec" class="scroll-mt-20">
+        <!-- 顶部研报元数据标签栏与快捷导出按钮 -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 text-xs text-slate-500 dark:text-slate-400">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-mogold-500/15 text-mogold-700 dark:text-mogold-400 font-bold border border-mogold-500/30">管理层定评：36年内部嫡系老将 × 财务与合规双重守护者</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-200/70 dark:bg-navy-800 text-slate-700 dark:text-slate-300 font-medium">研究横跨：PM USA 基层 (1990) · 集团 CFO (2020–2026) · 集团 CEO (2026.05+)</span>
+          </div>
+          <div class="flex items-center space-x-3 font-mono">
+            <span>覆盖基准：2026年11月 (Q3 2026)</span>
+            <button onclick="exportStandaloneHtml()" class="no-print inline-flex items-center space-x-1 text-mogold-600 dark:text-mogold-400 hover:underline font-sans font-semibold cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>下载 .html</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero 标题卡片 -->
+        <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy-900 via-navy-800 to-slate-900 text-white p-6 sm:p-10 shadow-xl border border-slate-700/70">
+          <!-- 背景琥珀金点阵纹理 -->
+          <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#F59E0B 1.2px, transparent 1.2px); background-size: 24px 24px;"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-mogold-500/20 border border-mogold-400/40 text-mogold-300 text-xs font-semibold mb-4">
+              <span class="w-2 h-2 rounded-full bg-mogold-400 animate-pulse"></span>
+              <span>CORE THESIS · 36年内部晋升传承 × 62.4% 顶级运营利润率 × 57年61次提息股息王掌舵人</span>
+            </div>
+            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight text-white">
+              奥驰亚 CEO 萨尔·曼库索 Salvatore "Sal" Mancuso 深度研究报告：从财务铁律操盘手到“超越吸烟”转型统帅
+            </h1>
+            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-4xl leading-relaxed">
+              2026 年 5 月 14 日，在奥驰亚集团（Altria Group, NYSE: MO）股东大会落幕之际，60 岁的首席财务官 <strong class="text-white">萨尔·曼库索（Sal Mancuso）</strong> 正式接替功勋 CEO 比利·吉福德（Billy Gifford），执掌这座年扣税净营收逾 $200 亿美元的美国尼古丁帝国（<a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link text-mogold-300 font-semibold">Altria 官方交接公告</a>）。自 1990 年加入菲利普莫里斯美国公司（PM USA）以来，曼库索深耕奥驰亚体系长达 <strong class="text-mogold-300">36 年</strong>，横跨财务、战略规划、合规治理与百威英博（ABI）董事会代表等核心枢纽。
+              履新首个完整季度（2026Q3），他便交出亮眼答卷：依靠 <strong class="text-white">RGM 精准算法定价</strong> 与年化 <strong class="text-emerald-400">~$5.0亿联邦消费税退税（Duty Drawback）</strong> 增量，成功将本土卷烟销量跌幅收窄至 <strong class="text-white">-2.9%</strong>，顺势将 2026 全年调整后稀释 EPS 指引上调至 <a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link text-mogold-400 font-semibold">$5.66–$5.74（+4.5%~+6.0%）</a>，并推动董事会连续第 57 年上调股息（年化 <strong class="text-emerald-400">$4.44/股</strong>）及追加 <strong class="text-white">$10亿</strong> 股票回购授权。
+            </p>
+
+            <!-- 核心领导力特质高亮条 -->
+            <div class="mt-6 pt-6 border-t border-slate-700/80 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+              <div class="bg-white/5 rounded-xl p-3.5 border border-white/10">
+                <div class="text-slate-400 font-medium mb-1">连续两任“CFO 升任 CEO”的治理传统</div>
+                <div class="text-white font-semibold">承袭 Billy Gifford 路径，由最懂自由现金流、资本配置与监管边界的内部专家掌舵，杜绝盲目并购折腾</div>
+              </div>
+              <div class="bg-white/5 rounded-xl p-3.5 border border-white/10">
+                <div class="text-slate-400 font-medium mb-1">“CEO 财务铁律 × CFO 运营一线”双核</div>
+                <div class="text-mogold-400 font-semibold">提拔原 PM USA 总裁兼首席战略官 Heather Newman 出任 CFO，形成极致的战略财务与终端执行互补</div>
+              </div>
+              <div class="bg-white/5 rounded-xl p-3.5 border border-white/10">
+                <div class="text-slate-400 font-medium mb-1">2028 企业战略目标的坚定捍卫者</div>
+                <div class="text-emerald-400 font-semibold">锚定 2.0x 债务/EBITDA 上限、≥60% 调整后 OCI 利润率，稳步推进 on! PLUS 与 NJOY ACE 专利绕道重返</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4个核心 KPI 卡片 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-6">
+          <!-- KPI 1 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span>奥驰亚体系深耕资历</span>
+              <span class="p-1.5 rounded-lg bg-mogold-500/15 text-mogold-600 dark:text-mogold-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </span>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono">36 年</span>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded">1990–2026+</span>
+            </div>
+            <p class="mt-2 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              1990 年加入 PM USA，历经战略、财务、合规与 6 年集团 CFO（2020–2026），董事会经第三方评估后一致推选接班（<a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Nasdaq</a>）。
+            </p>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span>任期首年上调 EPS 指引</span>
+              <span class="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              </span>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white font-mono">$5.66–$5.74</span>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded">+4.5%~6.0%</span>
+            </div>
+            <p class="mt-2 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              2026Q3 单季调整后稀释 EPS 达 $1.52（+4.8%），全年指引较 2025 年基准 $5.42 稳健提升（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+            </p>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span>CFO 任内利润率与退税增量</span>
+              <span class="p-1.5 rounded-lg bg-teal-500/15 text-teal-600 dark:text-teal-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </span>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono">62.4%+</span>
+              <span class="text-xs font-bold text-teal-600 dark:text-teal-400 bg-teal-500/15 px-2 py-0.5 rounded">退税 ~$500M/年</span>
+            </div>
+            <p class="mt-2 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              主导 Optimize &amp; Accelerate 降本及 Duty Drawback 退税落地（Q3 单季贡献 $1.24亿），锁死全球烟草业最高营业利润率。
+            </p>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span>股息之王延续与回购加码</span>
+              <span class="p-1.5 rounded-lg bg-mogold-500/15 text-mogold-600 dark:text-mogold-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </span>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono">$4.44/股</span>
+              <span class="text-xs font-bold text-mogold-700 dark:text-mogold-400 bg-mogold-500/15 px-2 py-0.5 rounded">第61次加息</span>
+            </div>
+            <p class="mt-2 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              2026 年 8 月上调季度股息 4.7% 至 $1.11/股（57年61次提息），并追加 $10亿回购，将总回购额度扩充至 $20亿级（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           一、 履历图谱与战略四大支柱 (Executive Profile & Strategic Pillars)
+      ========================================================= -->
+      <section id="sec-biz" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-mogold-600 dark:text-mogold-400">Section 01 · Executive Career &amp; Strategic Execution Architecture</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">一、 曼库索治理版图：CFO 任内资本配置成绩单与 CEO 时代四大战略抓手</h2>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400">2020–2026 累计向股东回馈超 $400亿 · 股价表现稳健跑赢防御板块</span>
+        </div>
+
+        <!-- 交互式 Chart.js 双视图切换面板 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- 左侧：双视图图表 -->
+          <div class="lg:col-span-7 bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white text-base" id="biz-chart-title">曼库索 CFO→CEO 周期（2020–2026E）：调整后 EPS 与每股年化股息稳步攀升</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5" id="biz-chart-sub">2020 年出任 CFO 以来，主导严控杠杆与持续回购，驱动调整后稀释 EPS 从 $4.36 增至 $5.70E（+30.7%）</p>
+              </div>
+              <div class="inline-flex rounded-lg bg-slate-100 dark:bg-navy-800 p-1 text-xs no-print">
+                <button onclick="switchBizChart('eps_dividend')" id="btn-chart-evo" class="px-2.5 py-1 rounded-md font-semibold bg-white dark:bg-navy-700 text-mogold-600 dark:text-mogold-400 shadow-sm transition cursor-pointer">视图A：EPS与股息爬坡轨迹</button>
+                <button onclick="switchBizChart('capital_allocation')" id="btn-chart-split" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer">视图B：2026资本配置结构</button>
+              </div>
+            </div>
+            <div class="relative h-72 w-full">
+              <canvas id="bizArchitectureChart"></canvas>
+            </div>
+          </div>
+
+          <!-- 右侧：结构性战略洞察 -->
+          <div class="lg:col-span-5 bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-base mb-3">为什么奥驰亚董事会选择“财务+合规老将”掌舵？</h3>
+              <ul class="space-y-4 text-sm">
+                <li class="flex items-start space-x-3">
+                  <span class="w-6 h-6 rounded-full bg-mogold-500/15 text-mogold-600 dark:text-mogold-400 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+                  <div>
+                    <div class="font-semibold text-slate-900 dark:text-white">穿越财务、战略与合规三大中枢的“全能守门人”</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      毕业于爱奥那学院（Iona College）会计专业，1990 年加入 PM USA 后，不仅执掌财务与战略规划，还曾深入领导奥驰亚<strong>合规组织（Compliance Organization）</strong>并出任百威英博（ABI）董事，兼具数字敏感度与强监管政治智慧（<a href="https://www.altria.com/about-altria/sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Altria Leadership</a>）。
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <span class="w-6 h-6 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+                  <div>
+                    <div class="font-semibold text-slate-900 dark:text-white">对外部高溢价并购保持高度审慎的“反冲动基因”</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      亲历 2018 年 $128亿入股 JUUL 减记风波后，曼库索在 CFO 任内确立了严苛的投资回报率（ROIC）门槛：拒绝为高估值故事买单，转而通过内生孵化 <strong>on! PLUS</strong> 与轻资产合作推进转型。
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <span class="w-6 h-6 rounded-full bg-teal-500/15 text-teal-600 dark:text-teal-400 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+                  <div>
+                    <div class="font-semibold text-slate-900 dark:text-white">“曼库索 × 纽曼”黄金搭档实现零摩擦权力交接</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      前任 CEO Billy Gifford 留任高级顾问至 2026 年底，同时由曾任 PM USA 总裁及集团首席战略官的 <strong>Heather Newman</strong> 接任 CFO，确保 2028 企业目标零偏差执行（<a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Nasdaq Release</a>）。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+              <span class="text-slate-500 dark:text-slate-400">董事会主席 Kathryn McQuade 评价</span>
+              <span class="font-bold text-mogold-600 dark:text-mogold-400">“兼具变革型领导力与结果导向坚韧心智”</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 四大战略执行支柱详细卡片矩阵 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- 支柱 1：核心现金牛与 RGM + 退税引擎 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-mogold-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-mogold-500/15 text-mogold-700 dark:text-mogold-400 text-xs font-bold">第一支柱 · 现金牛利润底座守护</span>
+                <span class="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400">退税年化 ~$500M</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">1. 精细化 RGM 定价与联邦消费税退税（Duty Drawback）扩容</h3>
+              <p class="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                在通胀挤压底层烟民可支配收入、折扣烟份额升至 34.1% 的背景下，曼库索团队不打全面价格战，而是利用门店级 RGM 算法死守 <strong>Marlboro 高端份额（59.7%）</strong>，同时放大进出口合规退税与为 PMI 代工的协同收益（2026Q3 单季退税贡献 <strong>$1.24亿</strong>，年底年化达 <strong>~$5.0亿</strong>），推动可燃烟营业利润逆势增长（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              <span>Q3 本土卷烟出货跌幅收窄至 -2.9%</span>
+              <span class="text-mogold-600 dark:text-mogold-400 font-semibold">全美烟草界最强盈利防御盾</span>
+            </div>
+          </div>
+
+          <!-- 支柱 2：现代口含尼古丁袋突围 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-emerald-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 text-xs font-bold">第二支柱 · 无烟成长核心抓手</span>
+                <span class="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400">on! Q3 出货 +13.3%</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">2. on! 与升级款 on! PLUS 双品牌矩阵反攻口含赛道</h3>
+              <p class="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                面对竞争对手 Zyn 与 Velo Plus 的猛烈攻势，曼库索坚持“产品力+渠道力”双重反击：一方面保持入门款 <strong>on!</strong> 稳健放量（2026Q3 出货达 4,780 万罐，同比增长 <strong>+13.3%</strong>），另一方面加速推进已获 FDA 营销授权的湿润柔感大袋新品 <strong>on! PLUS</strong>（涵盖薄荷、冬青及 12mg 规格）全国铺货，在扩张份额的同时守住口含烟板块 <strong>66.4%</strong> 的超高调整后 OCI 利润率（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              <span>Copenhagen + on! + on! PLUS</span>
+              <span class="text-emerald-600 dark:text-emerald-400 font-semibold">兼顾市场扩张与 65%+ 利润率红线</span>
+            </div>
+          </div>
+
+          <!-- 支柱 3：NJOY ACE 专利绕道与雾化理性节奏 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-teal-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-teal-500/15 text-teal-700 dark:text-teal-400 text-xs font-bold">第三支柱 · 雾化与加热不燃期权</span>
+                <span class="font-mono text-xs font-bold text-teal-600 dark:text-teal-400">专利改型研发完成</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">3. NJOY ACE 规避专利重返就绪 &amp; Horizon Ploom 稳步推进</h3>
+              <p class="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                针对 2025 年 ITC 专利禁令导致的 NJOY ACE 暂停销售，曼库索在 2026Q3 财报会上明确披露：团队已完成规避相关专利的技术改型设计，将结合 FDA 审批进度与非法一次性电子烟执法清场节奏择机重返市场（且<strong>不把未落地收益提前塞入业绩指引</strong>），展现出财务出身 CEO 特有的“保守承诺、超额兑现”风格。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              <span>NJOY ACE 改型 + JTI Horizon 加热烟</span>
+              <span class="text-teal-600 dark:text-teal-400 font-semibold">严控无效烧钱 · 静待监管清场</span>
+            </div>
+          </div>
+
+          <!-- 支柱 4：ABI 股权运作与股东回报飞轮 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-indigo-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 text-indigo-700 dark:text-indigo-400 text-xs font-bold">第四支柱 · 资本配置大师手笔</span>
+                <span class="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-400">ABI 持股价值 ~$9.5B–$10B</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">4. 百威英博（ABI）股权蓄水池与“提息+回购”剪刀差</h3>
+              <p class="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                作为长期派驻百威英博（ABI）董事会的核心代表，曼库索深谙资本结构优化之道：此前主导部分减持低股息率 ABI 股票并全额投入高股息率 MO 股票加速回购，实现立即增厚每股收益与现金流净节省；2026Q3 公司再斥资 <strong>$4亿回购 590 万股</strong>（均价 $68.52）并新增 $10亿回购授权（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              <span>前9个月派息 $53亿 + Q3 回购 $4亿</span>
+              <span class="text-indigo-600 dark:text-indigo-400 font-semibold">净债务/EBITDA 稳守 ~2.0x 安全线</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           二、 领导力哲学与四重治理壁垒 (Leadership Philosophy & Governance Moat)
+      ========================================================= -->
+      <section id="sec-moat" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Section 02 · Leadership Philosophy &amp; Governance Moat</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">二、 曼库索领导力哲学与四重治理壁垒：会计师的冷峻理性 × 36年体系凝聚力</h2>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400">治理评级：稳健透明 (Institutional Grade · 36年零重大财务丑闻记录)</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <!-- 左侧：四重治理与领导力壁垒深度解析 -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- 壁垒 1 -->
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center space-x-2.5 mb-2.5">
+                <span class="w-8 h-8 rounded-lg bg-mogold-500/15 text-mogold-600 dark:text-mogold-400 flex items-center justify-center font-bold text-sm">01</span>
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm">数字驱动的资本配置“冷峻理性”</h3>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                在传统烟草这类成熟现金牛行业，CEO 最致命的错误是“盲目多元化乱花钱”。曼库索会计与 CFO 出身的基因决定了他对每一美元资本开支都进行严苛的 IRR 测算，宁愿通过回购注销股本提升每股价值，也绝不做破坏资产负债表的豪赌。
+              </p>
+            </div>
+
+            <!-- 壁垒 2 -->
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center space-x-2.5 mb-2.5">
+                <span class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-sm">02</span>
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm">监管与合规风险的“内生免疫系统”</h3>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                曼库索曾亲自在奥驰亚合规组织担任核心领导职务（<a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Altria Bio</a>），深知美国 FDA、州检察长与税务规则的每一道红线。这种“把合规转化为竞争壁垒”的能力，使他在 Duty Drawback 退税与 PMTA 审批博弈中游刃有余。
+              </p>
+            </div>
+
+            <!-- 壁垒 3 -->
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center space-x-2.5 mb-2.5">
+                <span class="w-8 h-8 rounded-lg bg-teal-500/15 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold text-sm">03</span>
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm">跨部门协同与“零内耗”继任体系</h3>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                与 Billy Gifford 共事数十年并肩作战，接任后立即锁定同为内部资深的 Heather Newman 担任 CFO，保留核心研发与渠道团队稳定，避免了外部空降高管常见的“水土不服”与战略摇摆期。
+              </p>
+            </div>
+
+            <!-- 壁垒 4 -->
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center space-x-2.5 mb-2.5">
+                <span class="w-8 h-8 rounded-lg bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold text-sm">04</span>
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm">华尔街预期管理：“低承诺、高兑现”</h3>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                曼库索延续了奥驰亚机构沟通的极高信誉：不将尚待落地的 NJOY 重返收益计入 2026 指引，同时稳步上调 EPS 区间并在 8 月如期实现 57 年来第 61 次加息（+4.7%），赢得长线红利基金高度信赖。
+              </p>
+            </div>
+          </div>
+
+          <!-- 右侧：五维 CEO 能力雷达图 -->
+          <div class="lg:col-span-5 bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">全球烟草巨头掌舵人五维领导力模型对比</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">萨尔·曼库索 (MO) vs 雅克·奥尔扎克 (PM) vs 塔德乌·马罗科 (BTI)（满分 10 分）</p>
+            <div class="relative h-72 w-full">
+              <canvas id="moatRadarChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           三、 消费与烟草巨头 CEO 横向对比 (Peer CEO Matrix)
+      ========================================================= -->
+      <section id="sec-comp" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col lg:flex-row lg:items-end justify-between gap-3">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-mogold-600 dark:text-mogold-400">Section 03 · Global Tobacco &amp; Consumer Staples CEOs Comparative Matrix</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">三、 全球烟草与防御消费巨头 CEO 横向对比：四种掌舵基因与股东回报统治力</h2>
+          </div>
+          <!-- 交互式筛选按钮 + 实时搜索框 -->
+          <div class="flex flex-wrap items-center gap-2 text-xs no-print">
+            <input id="leader-search-input" type="text" oninput="applyLeaderFilters()" placeholder="搜索 CEO / 企业 / 背景关键词..." class="px-3 py-1.5 rounded-lg bg-white dark:bg-navy-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-mogold-500 w-48" />
+            <div class="flex flex-wrap gap-1.5" id="comp-filter-group">
+              <button onclick="filterCompetitors('all')" data-filter="all" class="comp-filter-btn active px-3 py-1.5 rounded-lg font-semibold bg-mogold-500 text-navy-950 shadow-sm transition cursor-pointer">全部掌舵人</button>
+              <button onclick="filterCompetitors('cfo_rise')" data-filter="cfo_rise" class="comp-filter-btn px-3 py-1.5 rounded-lg font-medium bg-white dark:bg-navy-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition cursor-pointer">CFO 晋升型 CEO</button>
+              <button onclick="filterCompetitors('ops_pivot')" data-filter="ops_pivot" class="comp-filter-btn px-3 py-1.5 rounded-lg font-medium bg-white dark:bg-navy-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition cursor-pointer">跨国运营变革型 CEO</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 横向对比矩阵表格 -->
+        <div class="bg-white dark:bg-navy-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100/80 dark:bg-navy-800/80 border-b border-slate-200 dark:border-slate-700 text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
+                  <th class="py-4 px-5 min-w-[180px]">CEO 姓名与执掌企业</th>
+                  <th class="py-4 px-4 min-w-[140px]">核心背景与晋升路径</th>
+                  <th class="py-4 px-4 min-w-[145px]">当前核心战略重心</th>
+                  <th class="py-4 px-4 min-w-[115px]">企业营业利润率</th>
+                  <th class="py-4 px-4 min-w-[125px]">杠杆与股东派息纪律</th>
+                  <th class="py-4 px-5 min-w-[240px]">与萨尔·曼库索执政风格的异同评估</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-xs sm:text-sm" id="comp-table-body">
+                <!-- 行 1：萨尔·曼库索基准 -->
+                <tr data-category="core" class="bg-mogold-500/5 dark:bg-mogold-500/10 font-medium">
+                  <td class="py-4 px-5">
+                    <div class="flex items-center space-x-2">
+                      <span class="px-2 py-0.5 rounded bg-mogold-500 text-navy-950 text-[10px] font-extrabold">研究基准</span>
+                      <span class="font-bold text-slate-900 dark:text-white">萨尔·曼库索</span>
+                    </div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Altria Group (NYSE: MO)</div>
+                  </td>
+                  <td class="py-4 px-4 font-semibold text-slate-900 dark:text-white">36年内部老将 · CFO/合规升任</td>
+                  <td class="py-4 px-4">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-mogold-500/15 text-mogold-700 dark:text-mogold-400">RGM定价 + on! PLUS + 回购</span>
+                  </td>
+                  <td class="py-4 px-4 font-mono font-bold text-emerald-600 dark:text-emerald-400">~62.4% (行业第一)</td>
+                  <td class="py-4 px-4 font-mono text-slate-900 dark:text-white">~2.0x · 股息率 ~5.65%</td>
+                  <td class="py-4 px-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>现金流与资本配置终极守门人：</strong>最强调资产负债表安全边际与内生无烟渐进扩张，避免高溢价外延并购风险。
+                  </td>
+                </tr>
+
+                <!-- 行 2：菲莫国际 CEO Jacek Olczak -->
+                <tr data-category="ops_pivot" class="hover:bg-slate-50 dark:hover:bg-navy-800/40 transition">
+                  <td class="py-4 px-5">
+                    <div class="font-bold text-slate-900 dark:text-white">雅克·奥尔扎克 (Jacek Olczak)</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Philip Morris Int'l (NYSE: PM)</div>
+                  </td>
+                  <td class="py-4 px-4 text-slate-700 dark:text-slate-300">欧洲市场运营 + 前 CFO 升任</td>
+                  <td class="py-4 px-4">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/15 text-teal-700 dark:text-teal-400">IQOS + $160亿收购Zyn(瑞典火柴)</span>
+                  </td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~40.5%</td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~2.6x · 股息率 ~3.20%</td>
+                  <td class="py-4 px-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>激进并购重塑派：</strong>同为财务与运营复合出身，但敢于举债 $160亿并购瑞典火柴（Zyn）押注无烟高增长，估值倍数更高但分红率较低。
+                  </td>
+                </tr>
+
+                <!-- 行 3：英美烟草 CEO Tadeu Marroco -->
+                <tr data-category="cfo_rise" class="hover:bg-slate-50 dark:hover:bg-navy-800/40 transition">
+                  <td class="py-4 px-5">
+                    <div class="font-bold text-slate-900 dark:text-white">塔德乌·马罗科 (Tadeu Marroco)</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">British American Tobacco (BTI)</div>
+                  </td>
+                  <td class="py-4 px-4 text-slate-700 dark:text-slate-300">30年内部老将 · 前财务总监升任</td>
+                  <td class="py-4 px-4">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/15 text-emerald-700 dark:text-emerald-400">降杠杆 + Velo/Vuse 减亏盈利</span>
+                  </td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~43.7%</td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~2.4x · 股息率 ~5.35%</td>
+                  <td class="py-4 px-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>曼库索的跨大西洋镜像：</strong>同样是 30 年财务背景内部接班、同样经历前任天价并购减值后主抓降杠杆、恢复回购与新烟草盈利。
+                  </td>
+                </tr>
+
+                <!-- 行 4：百威英博 CEO Michel Doukeris -->
+                <tr data-category="ops_pivot" class="hover:bg-slate-50 dark:hover:bg-navy-800/40 transition">
+                  <td class="py-4 px-5">
+                    <div class="font-bold text-slate-900 dark:text-white">邓明潇 (Michel Doukeris)</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">AB InBev (NYSE: BUD · MO参股)</div>
+                  </td>
+                  <td class="py-4 px-4 text-slate-700 dark:text-slate-300">亚太与北美区总裁升任 (非3G财务派)</td>
+                  <td class="py-4 px-4">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-500/15 text-amber-700 dark:text-amber-400">品牌高端化 + 数字化 B2B BEES</span>
+                  </td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~25.5%</td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">持续去杠杆 · 恢复派息</td>
+                  <td class="py-4 px-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>董事会治理协同伙伴：</strong>曼库索曾任 ABI 董事，见证 Doukeris 将百威从重并购转向内生有机增长与降债，间接增厚奥驰亚股权投资收益。
+                  </td>
+                </tr>
+
+                <!-- 行 5：宝洁 CEO Jon Moeller -->
+                <tr data-category="cfo_rise" class="hover:bg-slate-50 dark:hover:bg-navy-800/40 transition">
+                  <td class="py-4 px-5">
+                    <div class="font-bold text-slate-900 dark:text-white">乔恩·莫勒 (Jon Moeller)</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Procter &amp; Gamble (NYSE: PG)</div>
+                  </td>
+                  <td class="py-4 px-4 text-slate-700 dark:text-slate-300">30余年内部老将 · CFO/COO 升任</td>
+                  <td class="py-4 px-4">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-500/15 text-indigo-700 dark:text-indigo-400">品牌聚焦 + 生产力降本再投资</span>
+                  </td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">~24.0%</td>
+                  <td class="py-4 px-4 font-mono text-slate-700 dark:text-slate-300">AA-评级 · 68年股息王</td>
+                  <td class="py-4 px-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>成熟消费股王牌接班模板：</strong>证明在拥有顶级定价权的消费龙头中，由深谙产品组合与成本效率的内部 CFO 接任 CEO 往往最能创造稳健复利。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="leader-empty-state" class="hidden py-8 text-center text-xs text-slate-500 dark:text-slate-400">
+            未找到匹配的 CEO 记录，请尝试清空搜索词或切换分类标签。
+          </div>
+        </div>
+
+        <!-- 配套 Chart.js 横向条形图：曼库索主导的四大核心经营与财务指标 vs 2028 企业目标对比 -->
+        <div class="bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-base">用结果检验领导力：曼库索执掌周期核心经营指标实际表现 vs 2028 企业战略目标（%）</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">无论是总调整后 OCI 利润率（62.4% vs ≥60%目标）、可燃烟利润率（64.5%）、口含烟利润率（66.4%）还是 2026E EPS 增速（+5.2%），均全面跑赢战略基准线</p>
+            </div>
+            <span class="text-xs font-semibold text-mogold-700 dark:text-mogold-400 bg-mogold-500/15 px-2.5 py-1 rounded">全线超额兑现 2028 战略指引</span>
+          </div>
+          <div class="relative h-64 w-full">
+            <canvas id="compMarginChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           四、 资本配置成绩与股东回报推演 (Capital Allocation & Simulator)
+      ========================================================= -->
+      <section id="sec-fin" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Section 04 · Capital Allocation Track Record &amp; Shareholder Return Simulator</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">四、 资本配置成绩与股东回报推演：2.0x 杠杆铁律、$20亿回购池与股息王复利</h2>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400">2020–2026 连续 7 次年度提息 · 累计回购注销逾 1.85 亿股普通股</span>
+        </div>
+
+        <!-- 1. 财务健康度四大硬核指标卡 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="text-xs font-bold text-mogold-600 dark:text-mogold-400 uppercase">Leverage Anchor</div>
+            <div class="text-2xl font-extrabold font-mono text-slate-900 dark:text-white mt-1">~2.0x EBITDA</div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              曼库索在 CFO 任内将“总债务/合并 EBITDA 约 2.0x”确立为公司资本结构红线，并赢得惠誉上调信用评级至 BBB+。
+            </p>
+          </div>
+
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase">Dividend Growth Streak</div>
+            <div class="text-2xl font-extrabold font-mono text-slate-900 dark:text-white mt-1">$4.44/股 (+4.7%)</div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              2026 年 8 月实现 57 年来第 61 次上调股息，年化派息达 $4.44/股，前 9 个月累计向股东派发现金红利 $53亿（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+            </p>
+          </div>
+
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="text-xs font-bold text-teal-600 dark:text-teal-400 uppercase">Share Buyback Expansion</div>
+            <div class="text-2xl font-extrabold font-mono text-slate-900 dark:text-white mt-1">+$1.00B 扩充</div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              2026Q3 单季回购 590 万股（耗资 $4亿），董事会同步追加 $10亿回购授权至 2027 年底，剩余可用额度超 $13亿。
+            </p>
+          </div>
+
+          <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase">Duty Drawback Windfall</div>
+            <div class="text-2xl font-extrabold font-mono text-slate-900 dark:text-white mt-1">~$500M / 年</div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              通过出口退税与 PMI 代工合作盘活税务资产，2026 年底达到约 $5亿年化运行速率，相当于直接增厚约 $0.23/股税后 EPS。
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. 交互式 Chart.js 双轴演进图 -->
+        <div class="bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-base">2020–2026E 曼库索财务掌舵周期：稀释流通股本持续注销缩减 vs 年度现金派息稳健扩张</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">利用自由现金流与减持部分 ABI 资金持续低位回购，6 年累计注销约 1.85 亿股（总股本缩减近 10%），使总派息金额保持稳健的同时每股股息连年大增</p>
+            </div>
+            <span class="text-xs font-mono font-bold text-mogold-700 dark:text-mogold-400 bg-mogold-500/15 px-2.5 py-1 rounded">累计股本缩减 ~10% · 每股股息 +32.1%</span>
+          </div>
+          <div class="relative h-72 w-full">
+            <canvas id="valEvolutionChart"></canvas>
+          </div>
+        </div>
+
+        <!-- 3. 交互式组件：“曼库索任期与股息王策略”长期股东回报动态推演器 -->
+        <div class="bg-gradient-to-br from-navy-900 via-navy-800 to-slate-900 rounded-2xl p-6 sm:p-8 text-white border border-slate-700 shadow-xl space-y-6 no-print">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-slate-700/80">
+            <div>
+              <div class="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-wider text-mogold-400 font-bold">
+                <span>MANCUSO CAPITAL ALLOCATION ENGINE · 奥驰亚 CEO 任期策略复利模拟器</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white mt-1">“股息增长 + 股票回购 + RGM 定价”三维总回报动态推演器</h3>
+              <p class="text-xs text-slate-400 mt-0.5">支持一键切换三大情景（2020–2026 曼库索 CFO 历史战绩 / 2026–2036 基准防御稳健期 / 无烟与退税超预期牛市情景）或自定义调节参数</p>
+            </div>
+            <label class="inline-flex items-center space-x-2.5 px-3.5 py-2 rounded-xl bg-mogold-500/15 border border-mogold-400/30 text-xs font-semibold text-mogold-300 cursor-pointer shrink-0">
+              <input type="checkbox" id="div-bonus-toggle" checked onchange="updateValueSimulator()" class="w-4 h-4 rounded accent-[#F59E0B] cursor-pointer">
+              <span>叠加高股息自动再投 DRIP (+5.7%/年)</span>
+            </label>
+          </div>
+
+          <!-- 预设情景按钮组 -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs" id="era-btn-group">
+            <button type="button" onclick="setSimEra('cfo_track_record')" data-era="cfo_track_record" class="era-btn active px-3.5 py-2.5 rounded-xl text-left bg-mogold-500 text-navy-950 font-bold border border-mogold-400 shadow transition cursor-pointer">
+              <div>① 2020–2026 曼库索 CFO 任内实绩</div>
+              <div class="text-[11px] opacity-85 font-mono mt-0.5">6年 · 股价 ~$41→$78 + 股息再投 (~17.2% CAGR)</div>
+            </button>
+            <button type="button" onclick="setSimEra('ceo_base_2036')" data-era="ceo_base_2036" class="era-btn px-3.5 py-2.5 rounded-xl text-left bg-navy-950/70 text-slate-200 font-medium border border-slate-700 hover:border-mogold-400 transition cursor-pointer">
+              <div>② 2026–2036 CEO 任期基准防守情景</div>
+              <div class="text-[11px] text-slate-400 font-mono mt-0.5">10年 · 5.0% EPS/股价增速 + 5.7% 股息再投</div>
+            </button>
+            <button type="button" onclick="setSimEra('ceo_bull_2036')" data-era="ceo_bull_2036" class="era-btn px-3.5 py-2.5 rounded-xl text-left bg-navy-950/70 text-slate-200 font-medium border border-slate-700 hover:border-mogold-400 transition cursor-pointer">
+              <div>③ 无烟放量 + NJOY 重返牛市情景</div>
+              <div class="text-[11px] text-slate-400 font-mono mt-0.5">10年 · 7.5% 估值与盈利双击 + 5.7% 股息再投</div>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <!-- 左侧参数控制区 -->
+            <div class="lg:col-span-5 space-y-4 text-xs">
+              <div>
+                <div class="flex justify-between mb-1.5">
+                  <span class="text-slate-300 font-medium">初始投入本金 (USD)</span>
+                  <span id="sim-principal-label" class="font-mono font-bold text-white text-sm">$10,000</span>
+                </div>
+                <input id="sim-principal" type="range" min="1000" max="100000" step="1000" value="10000" oninput="markCustomEra(); updateValueSimulator()" class="w-full accent-[#F59E0B] cursor-pointer">
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1.5">
+                  <span class="text-slate-300 font-medium">持有评估年限 (Years)</span>
+                  <span id="sim-years-label" class="font-mono font-bold text-white text-sm">6 年</span>
+                </div>
+                <input id="sim-years" type="range" min="1" max="20" step="1" value="6" oninput="markCustomEra(); updateValueSimulator()" class="w-full accent-[#F59E0B] cursor-pointer">
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1.5">
+                  <span class="text-slate-300 font-medium">基础股价年化增值率 (Price CAGR %)</span>
+                  <span id="sim-growth-label" class="font-mono font-bold text-emerald-400 text-sm">11.5%</span>
+                </div>
+                <input id="sim-growth" type="range" min="0" max="18" step="0.1" value="11.5" oninput="markCustomEra(); updateValueSimulator()" class="w-full accent-[#10B981] cursor-pointer">
+              </div>
+
+              <p id="sim-era-caption" class="text-[11px] text-slate-400 leading-relaxed pt-1">
+                当前测算基准：对应 2020 年初曼库索出任集团 CFO 至 2026 年 5 月正式升任 CEO 期间的真实股东回报斜率（股价从 ~$41 稳步修复至 ~$78，叠加每年约 5.7% 股息再投，6 年总资产实现逾 2.5 倍稳健增值）。
+              </p>
+            </div>
+
+            <!-- 右侧四大实时测算结果卡片 -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-navy-950/80 rounded-xl p-5 border border-slate-800">
+                <div class="text-xs text-slate-400">期末预计总资产市值</div>
+                <div id="sim-final-value" class="text-2xl sm:text-3xl font-mono font-extrabold text-white mt-1.5">$25,922</div>
+                <div id="sim-total-return" class="text-xs font-semibold text-emerald-400 mt-1.5">累计净增值 +159%</div>
+              </div>
+
+              <div class="bg-navy-950/80 rounded-xl p-5 border border-slate-800">
+                <div class="text-xs text-slate-400">本金增值倍数 (MOIC Multiple)</div>
+                <div id="sim-multiple" class="text-2xl sm:text-3xl font-mono font-extrabold text-mogold-400 mt-1.5">2.59x</div>
+                <div id="sim-double-years" class="text-xs text-slate-400 mt-1.5">平均每 4.4 年资产翻一倍</div>
+              </div>
+
+              <div class="bg-navy-950/80 rounded-xl p-5 border border-slate-800">
+                <div class="text-xs text-slate-400">累计创造净复利收益</div>
+                <div id="sim-net-gain" class="text-2xl sm:text-3xl font-mono font-extrabold text-teal-400 mt-1.5">$15,922</div>
+                <div class="text-xs text-slate-400 mt-1.5">扣除初始投入本金后的纯复利收益</div>
+              </div>
+
+              <div class="bg-navy-950/80 rounded-xl p-5 border border-slate-800">
+                <div class="text-xs text-slate-400">有效综合年化总回报率</div>
+                <div id="sim-eff-cagr" class="text-2xl sm:text-3xl font-mono font-extrabold text-emerald-400 mt-1.5">17.20%</div>
+                <div id="sim-mid-val" class="text-xs text-slate-400 mt-1.5">持有半程（第 3 年）资产约：$16,099</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 正反双视角管理层评估对比 (Bull Case vs Critical Lens) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-emerald-50/70 dark:bg-emerald-950/20 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800/60">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-bold text-emerald-700 dark:text-emerald-400 text-base">机构看好曼库索的核心理由 (Bull Case)</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">零摩擦交接 + 铁血现金流纪律</span>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-start space-x-2"><span class="text-emerald-600 font-bold">✓</span><span><strong>杜绝“新官上任烧钱并购”的治理风险：</strong>在当前利率与监管环境下，奥驰亚最需要的是守住 62%+ 营业利润率与 $90亿级自由现金流，曼库索 36 年财务与合规背景正是最佳压舱石。</span></li>
+              <li class="flex items-start space-x-2"><span class="text-emerald-600 font-bold">✓</span><span><strong>首席战略官 Heather Newman 升任 CFO 形成完美互补：</strong>Newman 曾任 PM USA 总裁并主抓企业战略，与曼库索组成“战略运营 + 资本配置”双核，确保终端渠道执行力不打折扣。</span></li>
+              <li class="flex items-start space-x-2"><span class="text-emerald-600 font-bold">✓</span><span><strong>预期管理极度审慎，保留多重上行催化剂：</strong>无论是 $5亿退税放量、on! PLUS 全国放量还是改型版 NJOY ACE 重返，均具备持续超预期空间。</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-rose-50/70 dark:bg-rose-950/20 rounded-2xl p-6 border border-rose-200 dark:border-rose-800/60">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-bold text-rose-700 dark:text-rose-400 text-base">客观挑战与任期核心考题 (Critical Lens)</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-rose-500/15 text-rose-700 dark:text-rose-300">无烟占比追赶 + 折扣烟防御</span>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-start space-x-2"><span class="text-rose-600 font-bold">!</span><span><strong>无烟营收占比追赶压力：</strong>菲莫国际（PM）无烟收入占比已突破 40%，英美烟草（BTI）亦达约 20%，而奥驰亚无烟板块占比仍仅约 13%，曼库索需证明仅靠内生研发能否加速提高无烟权重。</span></li>
+              <li class="flex items-start space-x-2"><span class="text-rose-600 font-bold">!</span><span><strong>如何突破口含袋双寡头围剿：</strong>面对 Zyn 的先发心智垄断与 Velo Plus 的激进补贴，on! PLUS 能否在不牺牲口含烟 65%+ 利润率的前提下实现份额跃升是一大考验。</span></li>
+              <li class="flex items-start space-x-2"><span class="text-rose-600 font-bold">!</span><span><strong>核心管理层“纯内部同质化”视角局限：</strong>核心高管均在奥驰亚体系服务二三十年，在应对非尼古丁新消费（Beyond Nicotine）与新兴数字营销时需防止路径依赖。</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           五、 三幕晋升演进与治理遗产复盘 (Three-Act Evolution & Takeaways)
+      ========================================================= -->
+      <section id="sec-inv" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-mogold-600 dark:text-mogold-400">Section 05 · Three-Act Career Evolution &amp; Governance Takeaways</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">五、 三幕职业演进与管理复盘：从基层会计师到百年烟草巨头第十任掌门</h2>
+          </div>
+          <span class="text-xs text-slate-500 dark:text-slate-400">理解曼库索的关键：每一个关键节点都伴随着大型结构重组与行业监管变局</span>
+        </div>
+
+        <!-- 1. 三幕职业演进卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- 第一幕 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-rose-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2.5 py-0.5 rounded bg-rose-500/15 text-rose-600 dark:text-rose-400 text-xs font-bold">第一幕 · 基层历练与合规筑基</span>
+                <span class="font-mono text-xs font-bold text-slate-500">1990–2019</span>
+              </div>
+              <div class="text-xl font-extrabold font-mono text-slate-900 dark:text-white mt-2">财务、战略与合规多面手</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
+                <strong>核心复盘：</strong>从 Pittston Company 转投 PM USA 后，历经 1998 年 MSA 大和解、2007–2008 年卡夫与菲莫国际分拆等历史大事件，先后出任财务副总裁、战略规划高管及集团合规负责人，打下深厚的产业与监管根基（<a href="https://www.altria.com/about-altria/sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Altria Bio</a>）。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-semibold text-rose-600 dark:text-rose-400">
+              阶段启示：强监管行业的顶级高管必须先过“合规与风控”硬核关
+            </div>
+          </div>
+
+          <!-- 第二幕 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-mogold-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2.5 py-0.5 rounded bg-mogold-500/15 text-mogold-700 dark:text-mogold-400 text-xs font-bold">第二幕 · 危机中的首席财务官</span>
+                <span class="font-mono text-xs font-bold text-mogold-600 dark:text-mogold-400">2020–2026</span>
+              </div>
+              <div class="text-xl font-extrabold font-mono text-slate-900 dark:text-white mt-2">修复资产负债表与估值</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
+                <strong>核心复盘：</strong>2020 年疫情与 JUUL 减记低谷期出任 EVP 兼 CFO，与 CEO Billy Gifford 联手清理历史包袱、严控 2.0x 杠杆上限、主导减持部分 ABI 换取加速回购 MO，并在 2026 年 2 月赢得惠誉上调评级至 BBB+（<a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Altria Release</a>）。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-semibold text-mogold-600 dark:text-mogold-400">
+              阶段启示：卓越的 CFO 不仅是记账员，更是股东价值的直接创造者
+            </div>
+          </div>
+
+          <!-- 第三幕 -->
+          <div class="report-card bg-white dark:bg-navy-900 rounded-2xl p-6 border-t-4 border-t-emerald-500 border-x border-b border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold">第三幕 · 接掌帅印与 2028 冲刺</span>
+                <span class="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400">2026.05+</span>
+              </div>
+              <div class="text-xl font-extrabold font-mono text-slate-900 dark:text-white mt-2">稳守现金牛 · 加速无烟突破</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
+                <strong>核心复盘：</strong>2026 年 5 月 14 日正式接任 CEO（<a href="https://nicotineinsider.com/2026/05/15/sal-mancuso-formally-takes-over-as-altria-ceo/" target="_blank" rel="noopener noreferrer" class="cite-link">Nicotine Insider</a>），首季即兑现全年 EPS 指引上调与 $10亿回购扩充，下一步核心战役在于打赢 <strong>on! PLUS</strong> 份额争夺战与 <strong>NJOY ACE</strong> 改型重返。
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+              阶段启示：稳健守成与审慎创新并举，捍卫半世纪“股息王”金字招牌
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 四大关键经营战役复盘矩阵 -->
+        <div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-3">实战检验：曼库索参与操盘的四大关键商业决策与成效</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold">战役 01 · “减持 ABI 置换回购 MO”的资本套利</span>
+                <span class="text-xs font-mono text-slate-500 font-semibold">2024–2025 资本运作</span>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">卖出低股息率啤酒股，加速注销高股息率自家股票</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                在百威英博股息率不足 1.5%、而奥驰亚自身股息率高达 7%–8% 的估值倒挂期，主导精准减持部分 ABI 持股并将套现资金全额投入加速股票回购，实现即刻每股盈利增厚与永久性股息支出节约。
+              </p>
+            </div>
+
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-bold">战役 02 · Duty Drawback 联邦消费税退税挖掘</span>
+                <span class="text-xs font-mono text-slate-500 font-semibold">2025–2026 利润引擎</span>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">把合规进出口与代工业务转化为每年 $5亿 税前利润</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                依托深厚的税务与合规功底，打通符合美国联邦法典的消费税退税路径并扩大与 PMI 的代工出口规模，2026Q3 单季即贡献 $1.24亿增量，年底实现 ~$5亿/年常态化运行速率（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+              </p>
+            </div>
+
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2 py-0.5 rounded bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-bold">战役 03 · 信用评级重返 BBB+ 阶梯</span>
+                <span class="text-xs font-mono text-slate-500 font-semibold">2026.02 惠誉上调</span>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">六年去杠杆与现金流稳定性赢得三大评级机构认可</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                在 JUUL 时期杠杆率一度攀升引发评级下调担忧后，曼库索连续六年严守 2.0x 债务/EBITDA 纪律并平稳拉长债期，最终推动惠誉（Fitch）于 2026 年 2 月将奥驰亚长期发行人评级上调至 BBB+。
+              </p>
+            </div>
+
+            <div class="report-card bg-white dark:bg-navy-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold">战役 04 · 2026Q3 首份完整季报上调全年指引</span>
+                <span class="text-xs font-mono text-slate-500 font-semibold">2026.10 业绩验证</span>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">用 +4.8% 季度调整后 EPS 增长回应市场对换帅的审视</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                履新 CEO 后首个完整季度，扣税后净营收增长 3.6% 至 $54亿、调整后稀释 EPS 达 $1.52，并将全年指引上调至 $5.66–$5.74，证明新老班子交接顺畅、核心定价权毫无松动（<a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Q3 2026 Release</a>）。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 机构级商业与投资启示横幅 -->
+        <div class="bg-gradient-to-r from-navy-900 to-navy-800 rounded-2xl p-6 text-white border border-slate-700 shadow-md">
+          <h3 class="text-base font-bold text-mogold-400 mb-4 flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>写给红利资产投资者与企业治理观察者的三条“曼库索管理法则”</span>
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+            <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+              <div class="font-bold text-white mb-1">1. 在现金牛行业，选“懂 ROIC 的 CFO 型 CEO”远胜“爱讲宏大故事的并购狂”</div>
+              <p class="text-slate-300 leading-relaxed">
+                当核心品类进入成熟稳态期，管理层最大的价值在于克制帝国扩张冲动，通过精准定价、税务优化与持续回购将自由现金流最大化转化为股东复利。
+              </p>
+            </div>
+            <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+              <div class="font-bold text-mogold-400 mb-1">2. 强监管赛道的护城河不仅在牌照，更在“把合规变成利润”的能力</div>
+              <p class="text-slate-300 leading-relaxed">
+                无论是每年 $5亿的联邦消费税退税，还是 FDA 对 on! PLUS 的上市授权，只有具备数十年合规积淀的头部巨头才能将复杂监管规则转化为超额利润。
+              </p>
+            </div>
+            <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+              <div class="font-bold text-emerald-400 mb-1">3. 关注继任者的“二把手配置”：财务统帅必须配对一线运营悍将</div>
+              <p class="text-slate-300 leading-relaxed">
+                曼库索升任 CEO 后立即由原 PM USA 总裁 Heather Newman 出任 CFO，这一配置既守住了资本纪律，又确保了全美 30 万零售货架的一线战斗力。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           六、 “曼库索任期评估”交互核查清单 (Checklist)
+      ========================================================= -->
+      <section id="sec-kpi" class="scroll-mt-20 space-y-6">
+        <div class="border-b border-slate-200 dark:border-slate-800 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Section 06 · CEO Sal Mancuso Tenure &amp; Execution Diagnostic Checklist</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">六、 萨尔·曼库索任期表现与投资跟踪交互式核查清单（Checklist）</h2>
+          </div>
+          <div class="flex items-center space-x-2 no-print">
+            <span id="kpi-progress-badge" class="px-3 py-1 rounded-full bg-mogold-500/15 text-mogold-700 dark:text-mogold-400 text-xs font-bold">已核查 3 / 6 项 (50%)</span>
+            <button onclick="resetKpiChecklist()" class="px-2.5 py-1 rounded-lg bg-slate-200/80 dark:bg-navy-800 hover:bg-slate-300 dark:hover:bg-navy-700 text-xs font-medium text-slate-700 dark:text-slate-300 transition cursor-pointer">重置清单</button>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-navy-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">
+            可用于每季财报后持续追踪新任 CEO 萨尔·曼库索的执政兑现度与奥驰亚股息安全垫（点击勾选自动本地保存状态）：
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5" id="kpi-checklist">
+            <!-- KPI 1 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-1" checked onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">1. 资本配置铁律测试：是否严守 2.0x 杠杆且拒绝高溢价盲目并购？</span>
+                  <span class="text-[11px] font-mono text-mogold-600 dark:text-mogold-400 font-semibold shrink-0">财务纪律锚</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  核查曼库索是否延续其 CFO 任内确立的约 2.0x 净债务/EBITDA 上限，将超额自由现金流优先用于股息与股票回购。
+                </p>
+              </div>
+            </label>
+
+            <!-- KPI 2 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-2" checked onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">2. RGM 定价与退税兑现测试：总调整后 OCI 利润率是否稳超 60%？</span>
+                  <span class="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-semibold shrink-0">盈利护城河</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  跟踪万宝路高端份额（59.7%）与年化 ~$5亿 Duty Drawback 消费税退税落地情况，检验盈利底座稳固度。
+                </p>
+              </div>
+            </label>
+
+            <!-- KPI 3 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-3" checked onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">3. 2028 企业 EPS 与股息双中个位数增长目标兑现度</span>
+                  <span class="text-[11px] font-mono text-teal-600 dark:text-teal-400 font-semibold shrink-0">股东契约锚</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  2026 年调整后 EPS 指引已上调至 $5.66–$5.74（+4.5%~6.0%），年化股息升至 $4.44/股（+4.7%），持续校验中个位数复利节奏。
+                </p>
+              </div>
+            </label>
+
+            <!-- KPI 4 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-4" onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">4. on! PLUS 全国铺货放量与口含烟板块 65%+ 利润率平衡</span>
+                  <span class="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-semibold shrink-0">无烟第一抓手</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  观察升级款 on! PLUS 能否在 Zyn 与 Velo Plus 夹击下打开新增长曲线，同时避免过度促销侵蚀口含烟高利润率。
+                </p>
+              </div>
+            </label>
+
+            <!-- KPI 5 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-5" onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">5. 改型版 NJOY ACE 重返上市与 Horizon Ploom 审批进展</span>
+                  <span class="text-[11px] font-mono text-mogold-600 dark:text-mogold-400 font-semibold shrink-0">看涨期权催化</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  跟踪规避专利后的 NJOY ACE 商业化时间表，以及联邦/州级执法清剿非法一次性电子烟带来的合规回流红利。
+                </p>
+              </div>
+            </label>
+
+            <!-- KPI 6 -->
+            <label class="flex items-start space-x-3 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-navy-800/50 cursor-pointer transition">
+              <input type="checkbox" id="kpi-6" onchange="updateKpiChecklist()" class="mt-1 w-4 h-4 rounded accent-[#D97706] focus:ring-mogold-500">
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-sm text-slate-900 dark:text-white">6. 新扩充 $10亿 回购执行速度及 ABI 股权动态资本运作</span>
+                  <span class="text-[11px] font-mono text-indigo-600 dark:text-indigo-400 font-semibold shrink-0">每股价值放大器</span>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                  跟踪每季度回购注销股本数量及均价纪律，关注管理层对价值近 $100亿 百威英博持股的后续资本优化安排。
+                </p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           页脚免责声明与信源索引 (Disclaimer & Sources Footer)
+      ========================================================= -->
+      <footer class="pt-8 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 space-y-2 pb-10">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-semibold text-slate-700 dark:text-slate-300">
+          <span>奥驰亚 CEO 萨尔·曼库索 Salvatore "Sal" Mancuso 深度领导力与战略研究报告 · 机构框架版</span>
+          <span>核心数据出处：Altria SEC Form 8-K (2025.12) · Q3 2026 Results · Altria Leadership</span>
+        </div>
+        <p class="leading-relaxed">
+          <strong>数据来源与研究说明：</strong>本深度报告所有高管履历、治理结构与财务指标均严格核验自美国证监会（SEC EDGAR）与奥驰亚投资者关系官网公开披露的 <a href="https://www.nasdaq.com/press-release/altria-group-inc-announces-retirement-ceo-billy-gifford-and-appointment-sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Altria CEO &amp; CFO Succession Announcement</a>、<a href="https://www.altria.com/about-altria/sal-mancuso" target="_blank" rel="noopener noreferrer" class="cite-link">Sal Mancuso 官方履历</a>、<a href="https://nicotineinsider.com/2026/05/15/sal-mancuso-formally-takes-over-as-altria-ceo/" target="_blank" rel="noopener noreferrer" class="cite-link">2026 年股东大会正式履新报道</a> 及 <a href="https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx" target="_blank" rel="noopener noreferrer" class="cite-link">Altria 2026 Third-Quarter Results</a>。报告内置的复利模拟器旨在复盘资本配置与股息增长长期价值规律，不构成任何具体证券买卖建议。点击侧边栏或顶部“导出独立 HTML 文件”即可保存完整离线单文件版本。
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- 交互逻辑、一键导出 HTML 与 Chart.js 可视化脚本 -->
+  <script>
+    // ==========================================
+    // 0. 一键导出独立自包含 HTML 文件 (.html)
+    // ==========================================
+    let toastTimer = null;
+
+    function showToast(msg) {
+      const toast = document.getElementById('export-toast');
+      const msgEl = document.getElementById('export-toast-msg');
+      if (!toast || !msgEl) return;
+      msgEl.textContent = msg;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3200);
+    }
+
+    function exportStandaloneHtml() {
+      try {
+        const clone = document.documentElement.cloneNode(true);
+        const toastClone = clone.querySelector('#export-toast');
+        if (toastClone) {
+          toastClone.classList.add('hidden');
+          toastClone.classList.remove('flex');
+        }
+        const drawerClone = clone.querySelector('#mobile-drawer');
+        if (drawerClone) {
+          drawerClone.classList.add('hidden');
+        }
+        const progressClone = clone.querySelector('#reading-progress');
+        if (progressClone) {
+          progressClone.style.width = '0%';
+        }
+        clone.querySelectorAll('canvas').forEach(cv => {
+          cv.removeAttribute('width');
+          cv.removeAttribute('height');
+          cv.removeAttribute('style');
+        });
+
+        const htmlContent = '<!DOCTYPE html>\n' + clone.outerHTML;
+        const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Altria_CEO_Sal_Mancuso_Analysis.html';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setTimeout(() => URL.revokeObjectURL(url), 1500);
+        showToast('已成功导出独立 HTML 文件：Altria_CEO_Sal_Mancuso_Analysis.html');
+      } catch (err) {
+        showToast('导出失败，请使用浏览器右键“另存为”保存网页。');
+      }
+    }
+
+    // ==========================================
+    // 1. 亮色 / 深色模式切换（同步刷新所有 Chart.js 图表）
+    // ==========================================
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      updateChartsTheme();
+    }
+
+    // ==========================================
+    // 2. 移动端抽屉菜单切换
+    // ==========================================
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobile-drawer');
+      if (drawer) drawer.classList.toggle('hidden');
+    }
+
+    // ==========================================
+    // 3. 阅读进度条与左侧导航滚动联动高亮
+    // ==========================================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('#desktop-nav .nav-link');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      const prog = document.getElementById('reading-progress');
+      if (prog) prog.style.width = `${Math.min(100, Math.max(0, scrollPercent))}%`;
+
+      let currentId = 'sec-exec';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 160;
+        if (scrollTop >= top) {
+          currentId = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        const numSpan = link.querySelector('span span');
+        if (numSpan) {
+          numSpan.classList.remove('text-mogold-400');
+          numSpan.classList.add('text-slate-500');
+        }
+        if (link.dataset.target === currentId) {
+          link.classList.add('active');
+          if (numSpan) {
+            numSpan.classList.remove('text-slate-500');
+            numSpan.classList.add('text-mogold-400');
+          }
+        }
+      });
+    });
+
+    // ==========================================
+    // 4. 全球消费与烟草巨头 CEO 横向对比筛选 + 关键词搜索联动
+    // ==========================================
+    let activeLeaderCategory = 'all';
+
+    function filterCompetitors(category) {
+      activeLeaderCategory = category;
+      document.querySelectorAll('.comp-filter-btn').forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.classList.add('bg-mogold-500', 'text-navy-950', 'font-semibold', 'shadow-sm');
+          btn.classList.remove('bg-white', 'dark:bg-navy-800', 'text-slate-600', 'dark:text-slate-300', 'border', 'font-medium');
+        } else {
+          btn.classList.remove('bg-mogold-500', 'text-navy-950', 'font-semibold', 'shadow-sm');
+          btn.classList.add('bg-white', 'dark:bg-navy-800', 'text-slate-600', 'dark:text-slate-300', 'border', 'font-medium');
+        }
+      });
+      applyLeaderFilters();
+    }
+
+    function applyLeaderFilters() {
+      const searchInput = document.getElementById('leader-search-input');
+      const keyword = searchInput ? searchInput.value.trim().toLowerCase() : '';
+      const rows = document.querySelectorAll('#comp-table-body tr');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const rowCat = row.dataset.category;
+        const catMatch = (activeLeaderCategory === 'all' || rowCat === 'core' || rowCat === activeLeaderCategory);
+        const textMatch = !keyword || row.textContent.toLowerCase().includes(keyword);
+        if (catMatch && textMatch) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      const emptyState = document.getElementById('leader-empty-state');
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+    }
+
+    // ==========================================
+    // 5. “曼库索任期与股息王策略”长期股东价值与复利动态推演器
+    // ==========================================
+    const ERA_PRESETS = {
+      cfo_track_record: {
+        principal: 10000,
+        years: 6,
+        cagr: 11.5,
+        caption: '当前测算基准：对应 2020 年初曼库索出任集团 CFO 至 2026 年 5 月正式升任 CEO 期间的真实股东回报斜率（股价从 ~$41 稳步修复至 ~$78，叠加每年约 5.7% 股息再投，6 年总资产实现逾 2.5 倍稳健增值）。'
+      },
+      ceo_base_2036: {
+        principal: 10000,
+        years: 10,
+        cagr: 5.0,
+        caption: '当前测算基准：对应 2026–2036 曼库索 CEO 十年基准防守情景——假设年均股价随中个位数 EPS 增长 5.0%，叠加约 5.7% 股息再投，10 年总资产实现约 2.8 倍稳健复利增长。'
+      },
+      ceo_bull_2036: {
+        principal: 10000,
+        years: 10,
+        cagr: 7.5,
+        caption: '当前测算基准：对应 on! PLUS 全国放量、NJOY ACE 成功重返及非法电子烟清场带来的牛市情景——假设年均股价增幅达 7.5%，叠加 5.7% 股息再投，10 年累计总回报率超 245%。'
+      }
+    };
+
+    function highlightEraButton(eraKey) {
+      document.querySelectorAll('#era-btn-group .era-btn').forEach(btn => {
+        const subDiv = btn.querySelectorAll('div')[1];
+        if (btn.dataset.era === eraKey) {
+          btn.className = 'era-btn active px-3.5 py-2.5 rounded-xl text-left bg-mogold-500 text-navy-950 font-bold border border-mogold-400 shadow transition cursor-pointer';
+          if (subDiv) subDiv.className = 'text-[11px] opacity-85 font-mono mt-0.5';
+        } else {
+          btn.className = 'era-btn px-3.5 py-2.5 rounded-xl text-left bg-navy-950/70 text-slate-200 font-medium border border-slate-700 hover:border-mogold-400 transition cursor-pointer';
+          if (subDiv) subDiv.className = 'text-[11px] text-slate-400 font-mono mt-0.5';
+        }
+      });
+    }
+
+    function setSimEra(eraKey) {
+      const preset = ERA_PRESETS[eraKey];
+      if (!preset) return;
+      document.getElementById('sim-principal').value = preset.principal;
+      document.getElementById('sim-years').value = preset.years;
+      document.getElementById('sim-growth').value = preset.cagr;
+      document.getElementById('sim-era-caption').textContent = preset.caption;
+      highlightEraButton(eraKey);
+      updateValueSimulator();
+    }
+
+    function markCustomEra() {
+      highlightEraButton('custom');
+      document.getElementById('sim-era-caption').textContent = '当前测算基准：自定义资本配置复利推演模式——自由探索不同初始本金、持有期限与股价年化增速下的长期股东回报。';
+    }
+
+    function updateValueSimulator() {
+      const principal = parseFloat(document.getElementById('sim-principal').value) || 10000;
+      const years = parseInt(document.getElementById('sim-years').value, 10) || 6;
+      const baseGrowthPct = parseFloat(document.getElementById('sim-growth').value) || 5.0;
+      const divBonus = document.getElementById('div-bonus-toggle').checked ? 5.7 : 0;
+
+      const effGrowthPct = baseGrowthPct + divBonus;
+      const r = effGrowthPct / 100;
+
+      document.getElementById('sim-principal-label').textContent = '$' + principal.toLocaleString('en-US');
+      document.getElementById('sim-years-label').textContent = years + ' 年';
+      document.getElementById('sim-growth-label').textContent = baseGrowthPct.toFixed(1) + '%';
+
+      const finalVal = principal * Math.pow(1 + r, years);
+      const netGain = finalVal - principal;
+      const multiple = principal > 0 ? (finalVal / principal) : 1;
+      const totalReturnPct = principal > 0 ? ((netGain / principal) * 100) : 0;
+      const doubleYears = r > 0 ? (Math.log(2) / Math.log(1 + r)) : 0;
+      const midYears = Math.max(1, Math.round(years / 2));
+      const midVal = principal * Math.pow(1 + r, midYears);
+
+      document.getElementById('sim-final-value').textContent = '$' + Math.round(finalVal).toLocaleString('en-US');
+      document.getElementById('sim-total-return').textContent = `累计净增值 +${Math.round(totalReturnPct).toLocaleString('en-US')}%`;
+      document.getElementById('sim-multiple').textContent = multiple >= 100 ? `${multiple.toFixed(1)}x` : `${multiple.toFixed(2)}x`;
+      document.getElementById('sim-double-years').textContent = doubleYears > 0 ? `平均每 ${doubleYears.toFixed(1)} 年资产翻一倍` : '稳健保值';
+      document.getElementById('sim-net-gain').textContent = '$' + Math.round(netGain).toLocaleString('en-US');
+      document.getElementById('sim-eff-cagr').textContent = effGrowthPct.toFixed(2) + '%';
+      document.getElementById('sim-mid-val').textContent = `持有第 ${midYears} 年中期资产约：$${Math.round(midVal).toLocaleString('en-US')}`;
+    }
+
+    // ==========================================
+    // 6. KPI 核查清单状态持久化与计数更新
+    // ==========================================
+    const KPI_STORAGE_KEY = 'sal_mancuso_ceo_checklist_v1';
+
+    function loadKpiChecklist() {
+      try {
+        const saved = localStorage.getItem(KPI_STORAGE_KEY);
+        if (saved) {
+          const stateMap = JSON.parse(saved);
+          document.querySelectorAll('#kpi-checklist input[type="checkbox"]').forEach(cb => {
+            if (typeof stateMap[cb.id] === 'boolean') {
+              cb.checked = stateMap[cb.id];
+            }
+          });
+        }
+      } catch (e) {
+        // 忽略沙箱本地存储权限限制
+      }
+      updateKpiChecklist();
+    }
+
+    function updateKpiChecklist() {
+      const checkboxes = document.querySelectorAll('#kpi-checklist input[type="checkbox"]');
+      const total = checkboxes.length;
+      let checkedCount = 0;
+      const stateMap = {};
+
+      checkboxes.forEach(cb => {
+        stateMap[cb.id] = cb.checked;
+        if (cb.checked) checkedCount++;
+      });
+
+      const pct = total > 0 ? Math.round((checkedCount / total) * 100) : 0;
+      const badge = document.getElementById('kpi-progress-badge');
+      if (badge) badge.textContent = `已核查 ${checkedCount} / ${total} 项 (${pct}%)`;
+
+      try {
+        localStorage.setItem(KPI_STORAGE_KEY, JSON.stringify(stateMap));
+      } catch (e) {
+        // 忽略沙箱本地存储权限限制
+      }
+    }
+
+    function resetKpiChecklist() {
+      document.querySelectorAll('#kpi-checklist input[type="checkbox"]').forEach(cb => {
+        cb.checked = false;
+      });
+      updateKpiChecklist();
+      showToast('已重置“曼库索任期评估”核查清单状态');
+    }
+
+    // ==========================================
+    // 7. Chart.js 数据可视化初始化与主题自适应
+    // ==========================================
+    let bizChartInstance = null;
+    let radarChartInstance = null;
+    let compMarginChartInstance = null;
+    let valEvolutionChartInstance = null;
+    let currentBizMode = 'eps_dividend';
+
+    function getChartColors() {
+      const isDark = document.documentElement.classList.contains('dark');
+      return {
+        text: isDark ? '#CBD5E1' : '#475569',
+        grid: isDark ? 'rgba(51, 65, 85, 0.5)' : 'rgba(226, 232, 240, 0.85)',
+        radarAngle: isDark ? 'rgba(71, 85, 105, 0.6)' : 'rgba(203, 213, 225, 0.85)'
+      };
+    }
+
+    function initBizChart() {
+      const canvas = document.getElementById('bizArchitectureChart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      const ctx = canvas.getContext('2d');
+      const colors = getChartColors();
+
+      // 视图 A：2020–2026E 曼库索 CFO→CEO 周期调整后稀释 EPS 与每股年化股息爬坡轨迹
+      const epsDivConfig = {
+        type: 'bar',
+        data: {
+          labels: ['2020 (任CFO)', '2021', '2022', '2023', '2024', '2025', '2026E (任CEO)'],
+          datasets: [
+            {
+              label: '调整后稀释每股收益 Adjusted Diluted EPS ($/股)',
+              data: [4.36, 4.61, 4.84, 4.95, 5.19, 5.42, 5.70],
+              backgroundColor: 'rgba(245, 158, 11, 0.85)',
+              borderRadius: 5,
+              yAxisID: 'y'
+            },
+            {
+              type: 'line',
+              label: '期末年化每股股息 Annualized DPS ($/股 · 连续提息)',
+              data: [3.44, 3.60, 3.76, 3.92, 4.08, 4.24, 4.44],
+              borderColor: '#10B981',
+              backgroundColor: '#10B981',
+              borderWidth: 3,
+              pointRadius: 4.5,
+              tension: 0.25,
+              yAxisID: 'y'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: colors.text, font: { size: 11, family: 'Inter' }, usePointStyle: true }
+            },
+            tooltip: {
+              callbacks: {
+                label: (c) => `${c.dataset.label}: $${c.parsed.y.toFixed(2)}`
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: colors.text, font: { size: 10.5, weight: '600' } }
+            },
+            y: {
+              min: 2.5,
+              max: 6.2,
+              grid: { color: colors.grid },
+              ticks: { color: colors.text, font: { size: 11 }, callback: v => '$' + v.toFixed(2) }
+            }
+          }
+        }
+      };
+
+      // 视图 B：2026E 预计自由现金流 ~$9.2B 资本配置结构拆解 ($B)
+      const capAllocConfig = {
+        type: 'bar',
+        data: {
+          labels: [
+            '年度现金股息派发 (57年61次提息)',
+            '股票回购注销 (含新增$10亿授权)',
+            '无烟研发与合规投入 (on! PLUS / NJOY)',
+            '生产自动化与维护性资本开支 (CapEx)'
+          ],
+          datasets: [
+            {
+              label: '2026E 年度资本分配规模 ($B · 严守 2.0x 杠杆)',
+              data: [7.15, 1.35, 0.55, 0.34],
+              backgroundColor: [
+                '#F59E0B',
+                '#10B981',
+                '#06B6D4',
+                '#6366F1'
+              ],
+              borderRadius: 6,
+              barThickness: 22
+            }
+          ]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: colors.text, font: { size: 11, family: 'Inter' }, usePointStyle: true }
+            },
+            tooltip: {
+              callbacks: {
+                label: (c) => `预计年度资金配置: $${c.parsed.x.toFixed(2)}B`
+              }
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: 8.0,
+              grid: { color: colors.grid },
+              ticks: { color: colors.text, font: { size: 11 }, callback: v => '$' + v + 'B' }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { color: colors.text, font: { size: 11, weight: '600' } }
+            }
+          }
+        }
+      };
+
+      if (bizChartInstance) bizChartInstance.destroy();
+      bizChartInstance = new Chart(ctx, currentBizMode === 'eps_dividend' ? epsDivConfig : capAllocConfig);
+    }
+
+    function switchBizChart(mode) {
+      currentBizMode = mode;
+      const btnEvo = document.getElementById('btn-chart-evo');
+      const btnSplit = document.getElementById('btn-chart-split');
+      const titleEl = document.getElementById('biz-chart-title');
+      const subEl = document.getElementById('biz-chart-sub');
+
+      if (mode === 'eps_dividend') {
+        btnEvo.className = 'px-2.5 py-1 rounded-md font-semibold bg-white dark:bg-navy-700 text-mogold-600 dark:text-mogold-400 shadow-sm transition cursor-pointer';
+        btnSplit.className = 'px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer';
+        titleEl.textContent = '曼库索 CFO→CEO 周期（2020–2026E）：调整后 EPS 与每股年化股息稳步攀升';
+        subEl.textContent = '2020 年出任 CFO 以来，主导严控杠杆与持续回购，驱动调整后稀释 EPS 从 $4.36 增至 $5.70E（+30.7%）';
+      } else {
+        btnSplit.className = 'px-2.5 py-1 rounded-md font-semibold bg-white dark:bg-navy-700 text-mogold-600 dark:text-mogold-400 shadow-sm transition cursor-pointer';
+        btnEvo.className = 'px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer';
+        titleEl.textContent = '曼库索资本配置纪律：2026E 约 $9.2B 自由现金流四大去向拆解';
+        subEl.textContent = '超 90% 自由现金流通过股息（~$7.15B）与股票回购（~$1.35B）直接返还股东，维护性 CapEx 仅 ~$0.34B';
+      }
+      initBizChart();
+    }
+
+    function initRadarChart() {
+      const canvas = document.getElementById('moatRadarChart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      const ctx = canvas.getContext('2d');
+      const colors = getChartColors();
+
+      if (radarChartInstance) radarChartInstance.destroy();
+      radarChartInstance = new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: [
+            '资本配置纪律与杠杆风控',
+            '美国FDA监管与合规治理深度',
+            '股东现金分红与回购回报率',
+            '传统业务RGM定价与利润率捍卫',
+            '跨国激进并购与新品类扩张速度'
+          ],
+          datasets: [
+            {
+              label: '萨尔·曼库索 (MO · 财务与合规掌舵人)',
+              data: [9.9, 9.8, 10.0, 9.8, 6.8],
+              borderColor: '#F59E0B',
+              backgroundColor: 'rgba(245, 158, 11, 0.24)',
+              pointBackgroundColor: '#F59E0B',
+              borderWidth: 2.5
+            },
+            {
+              label: '雅克·奥尔扎克 (PM · 激进无烟转型派)',
+              data: [7.8, 8.8, 8.2, 8.6, 9.8],
+              borderColor: '#10B981',
+              backgroundColor: 'rgba(16, 185, 129, 0.14)',
+              pointBackgroundColor: '#10B981',
+              borderWidth: 2.0
+            },
+            {
+              label: '塔德乌·马罗科 (BTI · 跨国降杠杆派)',
+              data: [8.8, 8.6, 9.2, 8.5, 8.2],
+              borderColor: '#06B6D4',
+              backgroundColor: 'rgba(6, 182, 212, 0.12)',
+              pointBackgroundColor: '#06B6D4',
+              borderWidth: 1.8,
+              borderDash: [4, 4]
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: colors.text, font: { size: 11 }, usePointStyle: true }
+            }
+          },
+          scales: {
+            r: {
+              min: 0,
+              max: 10,
+              ticks: { display: false, stepSize: 2 },
+              grid: { color: colors.grid },
+              angleLines: { color: colors.radarAngle },
+              pointLabels: { color: colors.text, font: { size: 10.5, weight: '600' } }
+            }
+          }
+        }
+      });
+    }
+
+    function initCompMarginChart() {
+      const canvas = document.getElementById('compMarginChart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      const ctx = canvas.getContext('2d');
+      const colors = getChartColors();
+
+      if (compMarginChartInstance) compMarginChartInstance.destroy();
+      compMarginChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: [
+            'Oral Tobacco 口含烟板块调整后 OCI 利润率 (Q3 2026)',
+            'Smokeable 可燃烟板块调整后 OCI 利润率 (Q3 2026)',
+            '全集团总调整后运营公司利润率 Total Adj. OCI (FY25)',
+            '2028 企业战略总调整后 OCI 利润率底线目标',
+            '远期年化股息率 Forward Dividend Yield ($4.44/股)',
+            '2026E 调整后稀释 EPS 预计同比增长率 (指引中值)'
+          ],
+          datasets: [
+            {
+              label: '曼库索执掌期核心盈利与回报指标 (% · SEC 财报披露)',
+              data: [66.4, 64.5, 62.4, 60.0, 5.65, 5.20],
+              backgroundColor: [
+                '#F59E0B',
+                '#10B981',
+                '#06B6D4',
+                '#64748B',
+                '#8B5CF6',
+                '#EC4899'
+              ],
+              borderRadius: 6,
+              barThickness: 18
+            }
+          ]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: colors.text, font: { size: 11 }, usePointStyle: true }
+            },
+            tooltip: {
+              callbacks: {
+                label: (c) => `指标数值: ${c.parsed.x.toFixed(2)}%`
+              }
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: 75,
+              grid: { color: colors.grid },
+              ticks: { color: colors.text, font: { size: 11 }, callback: v => v + '%' }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { color: colors.text, font: { size: 11, weight: '600' } }
+            }
+          }
+        }
+      });
+    }
+
+    function initValEvolutionChart() {
+      const canvas = document.getElementById('valEvolutionChart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      const ctx = canvas.getContext('2d');
+      const colors = getChartColors();
+
+      if (valEvolutionChartInstance) valEvolutionChartInstance.destroy();
+      valEvolutionChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026E'],
+          datasets: [
+            {
+              type: 'bar',
+              label: '加权平均稀释流通总股本 (百万股 · 持续回购注销)',
+              data: [1860, 1850, 1808, 1775, 1716, 1692, 1672],
+              backgroundColor: 'rgba(245, 158, 11, 0.85)',
+              borderRadius: 5,
+              barThickness: 28,
+              yAxisID: 'y'
+            },
+            {
+              type: 'line',
+              label: '全年实际支付现金股息总额 ($B)',
+              data: [6.30, 6.45, 6.60, 6.75, 6.80, 7.00, 7.15],
+              borderColor: '#10B981',
+              backgroundColor: '#10B981',
+              borderWidth: 3,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              tension: 0.25,
+              yAxisID: 'y1'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: colors.text, font: { size: 11, family: 'Inter' }, usePointStyle: true }
+            },
+            tooltip: {
+              callbacks: {
+                label: (c) => c.datasetIndex === 0 ? `流通总股本: ${c.parsed.y}M 股` : `年度现金股息支出: $${c.parsed.y.toFixed(2)}B`
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: colors.text, font: { size: 11, weight: '600' } }
+            },
+            y: {
+              type: 'linear',
+              position: 'left',
+              min: 1550,
+              max: 1920,
+              grid: { color: colors.grid },
+              ticks: { color: colors.text, font: { size: 11 }, callback: v => v + 'M' },
+              title: { display: true, text: '流通总股本 (百万股)', color: colors.text, font: { size: 11 } }
+            },
+            y1: {
+              type: 'linear',
+              position: 'right',
+              min: 5.5,
+              max: 7.6,
+              grid: { drawOnChartArea: false },
+              ticks: { color: '#10B981', font: { size: 11, weight: '600' }, callback: v => '$' + v.toFixed(1) + 'B' },
+              title: { display: true, text: '年度现金股息 ($B)', color: '#10B981', font: { size: 11 } }
+            }
+          }
+        }
+      });
+    }
+
+    function updateChartsTheme() {
+      initBizChart();
+      initRadarChart();
+      initCompMarginChart();
+      initValEvolutionChart();
+    }
+
+    function renderAllReportCharts() {
+      if (typeof Chart === 'undefined') {
+        document.querySelectorAll('canvas').forEach(cv => {
+          const parent = cv.parentElement;
+          if (parent && !parent.querySelector('.chart-fallback-msg')) {
+            const msg = document.createElement('div');
+            msg.className = 'chart-fallback-msg flex items-center justify-center h-full text-xs text-amber-600 bg-amber-500/10 rounded-xl p-4 text-center';
+            msg.textContent = 'Chart.js 图表库加载受阻：请确认网络连接正常，或直接下载本地 .html 文件后用 Chrome/Edge 浏览器打开查看。';
+            parent.appendChild(msg);
+          }
+        });
+        return;
+      }
+      initBizChart();
+      initRadarChart();
+      initCompMarginChart();
+      initValEvolutionChart();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadKpiChecklist();
+      updateValueSimulator();
+      renderAllReportCharts();
+    });
+
+    window.addEventListener('load', () => {
+      if (!bizChartInstance || !radarChartInstance || !compMarginChartInstance || !valEvolutionChartInstance) {
+        renderAllReportCharts();
+      }
+    });
+  </script>
+</body>
+</html>
